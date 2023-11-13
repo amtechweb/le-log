@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Le-Log</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="static/img/lelog-logo.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="static/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="static/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+
+
+
+    <!-- Template Stylesheet -->
+    <link href="static/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white  navbar-light shadow border-top border-5 border-primary sticky-top p-0" id="navbar">
+        <a href="/" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <img src="static/img/lelog-logo.png/" alt="Logo" width="auto" height="95">
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0 mx-auto bg-white">
+                <a href="/slopage" class="nav-item nav-link">Domov</a>
+                <a href="#about" class="nav-item nav-link">O nas</a>
+                <a href="#service" class="nav-item nav-link">Storitve</a>
+                 <a href="#info" class="nav-item nav-link">Uporabne info</a>
+                <a href="#fleet" class="nav-item nav-link">Vozni park</a>
+                <a href="#contact" class="nav-item nav-link">Kontakt</a>
+            </div>
+            <div class="language px-2 mx-2 my-2 px-2">
+                <a href="/slov"><img src="static/img/flag1.png" alt="lelog-slo" width="30" height="auto"></a>
+                 <a href="/"><img src="static/img/uk.png" alt="lelog-eng" width="30" height="auto"></a>
+            </div>
+
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+
+    <div class="container-fluid p-0 ">
+        <div class="owl-carousel header-carousel position-relative ">
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="static/img/carousel-1.jpg" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(6, 3, 21, .5);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-10 col-lg-8">
+                                <p class="fs-5 fw-medium text-white mb-4 pb-2">Prevozniško podjetje z večletnimi izkušnjami
+                                    <br>
+                                    v mednarodnih in domačih prevozih..</p>
+                                <h2 class=" text-white animated slideInDown mb-4">"Z VAMI, <span class="text-primary">VEDNO IN </span> POVSOD"</h2>
+                                <a href="#about" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Izvedi več</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="static/img/carousel-2.jpg" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(6, 3, 21, .5);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                           <div class="col-10 col-lg-8">
+                                <p class="fs-5 fw-medium text-white mb-4 pb-2">Prevozniško podjetje z večletnimi izkušnjami
+                                    <br>
+                                    v mednarodnih in domačih prevozih..</p>
+                                <h2 class=" text-white animated slideInDown mb-4">"Z VAMI, <span class="text-primary">VEDNO IN </span> POVSOD"</h2>
+                                <a href="#about" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Izvedi več</a>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- Carousel End -->
+
+    <!-- About Start -->
+    <section id="about" class="section-">
+    <div class=" container-fluid overflow-hidden py-5 px-lg-0">
+        <div class="container about  py-5 px-lg-0">
+            <div class="row g-5 mx-lg-0">
+           <div class="col-lg-6 ps-lg-0 wow fadeInLeft" data-wow-delay="0.1s" style="min-height: 400px;">
+    <div class="position-relative h-100">
+        <img class="wow fadeInLeft position-absolute img-fluid w-50 h-50 p-2 " data-wow-delay="0.2s" src="static/img/10.jpg" style="object-fit: cover; border-radius:20px;" alt="">
+        <img class="wow fadeInLeft position-absolute img-fluid w-50 h-50 p-2" data-wow-delay="0.3s" src="static/img/9.jpg" style="object-fit: cover; top: 0; left: 50%;border-radius:20px;" alt="">
+        <img class="wow fadeInLeft position-absolute img-fluid w-50 h-50 p-2" data-wow-delay="0.4s" src="static/img/6.jpg" style="object-fit: cover; top: 50%; left: 50%;border-radius:20px;" alt="">
+        <img class="wow fadeInLeft position-absolute img-fluid w-50 h-50 p-2" data-wow-delay="0.5s" src="static/img/4.jpg" style="object-fit: cover; bottom: 0; right: 50%;border-radius:20px;" alt="">
+    </div>
+</div>
+                <div class="col-lg-6 about-text wow fadeInUp" data-wow-delay="0.3s">
+                    <h3 class="mb-5">O NAS</h3>
+                    <p class="mb-5">LE-LOG D.O.O. je prevozniško podjetje, katera primarna dejavnost je
+prevoz zabojnikov po celotni Evropi. Od samega začetka, leta 2018,
+želimo vzpostaviti dolgoročna sodelovanja s strankami tako, da
+ponujamo le najboljše: hitre, varne in zanesljive dostave.</p>
+                    <p>Naša usposobljena ekipa in izkušeni vozniki so vedno pripravljeni za
+dostavo blaga, kamorkoli je potrebno.
+Ponujamo hitre in pravočasne dostave, s 24/7 asistenco in rednimi
+posodobitvami.</p>
+                    <p>Želimo, da stranke čutijo našo podporo in da so zadovoljne na vsakem
+koraku dostave ter da zaupajo, da je njihovo blago v varnih rokah.</p>
+                    <p>Nahajamo se v neposredni bližini Luke Koper.</p>
+
+                    <div class="row g-4 mb-5 mt-2">
+                        <div class="col-sm-4 text-center wow fadeIn" data-wow-delay="0.5s">
+                            <i class="fa fa-user-shield fa-2x text-primary mb-3"></i>
+                            <h6>Varna dostava</h6>
+                        </div>
+                        <div class="col-sm-4 text-center wow fadeIn" data-wow-delay="0.7s">
+                            <i class="fa fa-shipping-fast fa-2x text-primary mb-3"></i>
+                            <h6>Hitra dostava</h6>
+                        </div>
+                        <div class="col-sm-4 text-center wow fadeIn" data-wow-delay="0.7s">
+                            <i class="fa fa-phone fa-2x text-primary mb-3"></i>
+                            <h6>Pomoč 24/7</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About End -->
+
+<hr class="hr">
+    <!-- Fact Start -->
+    <div class="container-xxl py-3 ">
+        <div class="container py-3">
+            <div class="row g-5">
+                <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.1s">
+                    <h3 class="mb-3 text-center">LE-LOG V ŠTEVILKAH</h3>
+                </div>
+          <div class="container">
+    <div class="row g-3">
+        <div class="col-12 col-md-4 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="bg-primary p-4 text-center rounded-3">
+                <i class="fa fa-truck fa-2x text-white  mb-3"></i>
+                <h2  class="text-white mb-2" data-toggle="counter-up">16.289</h2>
+                <p class="text-white  mb-0">DOSTAV</p>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-4 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="bg-secondary p-4 text-center rounded-3">
+                <i class="fa fa-users fa-2x text-white mb-3"></i>
+                <h2 class="text-white mb-2" data-toggle="counter-up">151</h2>
+                <p class="text-white mb-0">STRANK</p>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-4 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="bg-success p-4 text-center rounded-3">
+                <i class="fa fa-globe fa-2x text-white mb-3"></i>
+                <h2 class="text-white mb-2" data-toggle="counter-up">22</h2>
+                <p class="text-white mb-0">DRŽAV</p>
+            </div>
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+    </div>
+<div class="container">
+  <div class="row g-3 mb-4 mt-4">
+    <div class="col-md-6 wow fadeInLeft" data-wow-delay="0.5s">
+      <div class="text-center ">
+        <h4 class="card-title">NAŠA MISIJA</h4>
+        <p class="card-text ">Naša misija je, da še naprej zagotavljamo zanesljive storitve in hkrati
+obdržimo osebni pristop.
+Želimo si, da bi se vsaka stranka počutila posebno in edinstveno,
+tako kot tudi mi čutimo.</p>
+      </div>
+      <div class="img1 text-center mt-4 pt-2">
+        <img src="static/img/office.jpg" class="img-fluid rounded-3" alt="Office 1">
+      </div>
+    </div>
+    <div class="col-md-6 wow fadeInRight" data-wow-delay="0.6s">
+      <div class="text-center">
+        <h4 class="card-title">NAŠA VIZIJA</h4>
+        <p class="card-text">Naša vizija je, da se še naprej širimo z nakupi novih vozil ter da povečamo našo ekipo, katera bo
+podpirala še več strank, pri doseganju ciljev.
+Verjamemo, da smo skupaj močnejši - v slogi je moč!</p>
+      </div>
+      <div class="img2 mt-4 text-center">
+        <img src="static/img/cert.jpg" class="img-fluid rounded-3" alt="Office 2">
+      </div>
+    </div>
+  </div>
+</div>
+
+</section>
+    <!-- Fact End -->
+
+<hr class="hr">
+    <!-- Service Start -->
+    <section id="service" class="section">
+    <div class="container-xxl py-5 ">
+        <div class="container py-5 mt-4 ">
+            <div class="wow fadeInUp " data-wow-delay="0.1s">
+                <h3 class="text-center text-uppercase">STORITVE</h3>
+            </div>
+            <div class="row g-4 justify-content-center ">
+    <div class="col-md-12 col-lg-12 wow fadeInLeft" data-wow-delay="0.2s">
+        <div class="service-item p-4 shadow-sm" style="height: auto;">
+            <h5 class="mb-3 wow fadeInUp text-primary" style="text-shadow: #E5E5E5 1px 1px 1px;" data-wow-delay="0.4s">Ponujamo široko izbiro prevozov in storitev po celotni Evropi:</h5>
+            <ul class="service1 wow fadeInLeft p-2" data-wow-delay="0.2s">
+                <li>dostave zabojnikov</li>
+                <li>dostave s tovornimi vozili s ponjavo</li>
+                <li>dostave nevarnega blaga</li>
+                <li>dostave hitro pokvarljivega blaga</li>
+                <li>ekspresne dostave</li>
+                <li>izredne dostave</li>
+            </ul>
+            <p class="service1 wow fadeInLeft" data-wow-delay="0.2s"> Prav tako lahko pri nas naročite ladijske zalivke (plombe) za vse vrste
+zabojnikov.</p>
+
+            <h5 class="mb-3 wow fadeInUp text-primary" style="text-shadow: #E5E5E5 1px 1px 1px;" data-wow-delay="0.6s">V sodelovanju z našo hčerinsko družbo prav tako ponujamo:</h5>
+            <ul class="service1 wow fadeInLeft p-2" data-wow-delay="0.2s">
+                <li>carinske postopke</li>
+                <li>luško asistenco</li>
+                <li>železniško, zračno in pomorsko dostavo</li>
+                <li>pretovore in skladiščenje</li>
+                <li>inšpekcije</li>
+            </ul>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+        </section>
+                <div class="container">
+                <div class="row g-4 mt-2 p-2 mb-4">
+                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="service-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="img-fluid" src="static/img/23.jpg" alt="">
+                        </div>
+                        <h6 class="mb-3">DOSTAVA GENERALNEGA BLAGAO</h6>
+                         <a class="btn-slide mt-2" href="/sloservice"><i class="fa fa-arrow-right"></i><span>Preberi več</span></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="service-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="img-fluid" src="static/img/dangerous.jpg" alt="">
+                        </div>
+                        <h6 class="mb-3">DOSTAVA NEVARNEGA BLAGA</h6>
+                        <a class="btn-slide mt-2" href="/sloservice"><i class="fa fa-arrow-right"></i><span>Preberi več</span></a>
+                    </div>
+
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.8s">
+                    <div class="service-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="img-fluid" src="static/img/perishable.jpg" alt="">
+                        </div>
+                        <h6 class="mb-3">DOSTAVA HITRO POKVARLJIVEGA BLAGA</h6>
+                        <a class="btn-slide mt-2" href="/sloservice"><i class="fa fa-arrow-right"></i><span>Preberi več</span></a>
+                    </div>
+
+                </div>
+            </div>
+                    </div>
+    <!-- Service End -->
+<hr class="hr">
+
+<!-- Usefull info -->
+<section id="info" class="section mt-5 d-flex  align-items-center" style="min-height:100vh;">
+    <div class="container py-4 info-container ">
+        <div class="row">
+            <div class="wow fadeInUp" data-wow-delay="0.1s">
+                <h3 class="text-center text-uppercase">Uporabne info</h3>
+            </div>
+            <div class="col-sm">
+                <div class="wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="image-container">
+                        <a href="/slocontainers">
+                            <img src="static/img/21.jpg" alt="Truck and Trailers">
+                            <div class="overlay">
+                                <div class="text text-center">
+                                    <h5 class="text-white"> Info o kontajnerih</h5>
+                                    <p>Preberi več</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="image-container">
+                        <a href="/sloadr">
+                            <img src="static/img/dangerous.jpg" alt="Transportation">
+                            <div class="overlay">
+                                <div class="text text-center">
+                                    <h5 class="text-white">Info o dostavi nevarnega blaga</h5>
+                                    <p>Preberi več</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<hr class="hr">
+ <!-- Fleet -->
+<section id="fleet" class="section" style="min-height:100vh;  display:flex; align-items:center;">
+    <div class="container-fluid py-4">
+        <div class="container feature">
+            <div class="row g-2 mx-0">
+                <div class="col-lg-6 feature-text wow fadeInUp" data-wow-delay="0.1s">
+                    <h3 class="mb-4 text-center">VOZNI PARK</h3>
+                    <div class="d-flex mb-3 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="ms-4">
+                            <p class="mb-2">Naš vozni park je sestavljen iz 13 VOLVO in SCANIA kamionov, z EURO 6
+motorjem. Vsa vozila so opremljena s CVS sistemom, kar nam omogoča
+sledenje na vsakem koraku.
+                                <br><br>
+                                Vsa naša vozila so redno vzdrževana in opremljena z GENSET-om,
+primerna za dostavo hladilnih zabojnikov.
+                                <br><br>
+                                Zaradi povečanega povpraševanja, nenehno vlagamo v naš vozni par, z
+nakupom novih vozil.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 pe-0 wow fadeInRight">
+                    <img class="img-fluid p-3" src="static/img/3.jpg">
+                </div>
+                <div class="col-lg-3 pe-0 wow fadeInRight">
+                    <img class="img-fluid p-3" src="static/img/19.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<hr class="hr">
+ <!-- Contact -->
+<section id="contact" class="section" style="display:flex; align-items:center;">
+    <div class="container-xxl py-4">
+        <div class="container py-4">
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <h3 class="mb-4 text-center">KONTAKTIRAJTE NAS</h3>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <i class="fa fa-headphones fa-2x flex-shrink-0 text-primary"></i>
+                        <div class="ps-4">
+                            <h4 class="text-primary m-0"><a class="text-primary" href="tel:+38651633266">+386 51 633 266</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="bg-light text-center p-4 wow fadeIn" data-wow-delay="0.5s">
+                        <form action="/contact" method="post">
+                            <div class="row g-3">
+                                <div class="col-12 col-sm-6">
+                                    <input type="text" class="form-control" placeholder="Vaše ime" name="name">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="email" class="form-control" placeholder="Vaš e-mail" name="email">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="text" class="form-control" placeholder="Vaša telefonska" name="mobile">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <select class="form-select" name="delivery_option">
+                                        <option selected>Izberite dostavo</option>
+                                        <option value="General Cargo">Splošno blago</option>
+                                        <option value="Dangerous Cargo">Nevarno blago</option>
+                                        <option value="Perishable Cargo">Pokvarljivo blago</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="form-control" placeholder="Opomba" name="special_note"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-100 py-3" type="submit">Pošlji</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Contact -->
+
+    <!-- Footer Start -->
+ <div class="container-fluid bg-dark text-light footer pt-5 wow fadeIn" data-wow-delay="0.1s" style="margin-top: 6rem;">
+      <div class="container py-5">
+          <div class="row g-5">
+                <div class="col-lg-6 col-md-6">
+                    <h6 class="text-light mb-4">Naslov</h6>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Sermin 73E,6000 Koper</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+386 51 633 266</p>
+                    <a href="mailto:info@le-log.si" style="color:white;" class="mb-2"><i class="fa fa-envelope me-3"></i>info@le-log.si</a>
+                    <div class="d-flex pt-4">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <h6 class="text-light mb-4">Hitre povezave</h6>
+                    <a class="btn btn-link" href="#about">O nas</a>
+                    <a class="btn btn-link" href="#service">Storitve</a>
+                    <a class="btn btn-link" href="#info">Uporabne informacije</a>
+                    <a class="btn btn-link" href="#fleet">Vozni park</a>
+                    <a class="btn btn-link" href="#contact">Kontakt</a>
+                </div>
+              </div>
+            </div>
+     </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="static/lib/wow/wow.min.js"></script>
+    <script src="static/lib/easing/easing.min.js"></script>
+    <script src="static/lib/waypoints/waypoints.min.js"></script>
+    <script src="static/lib/counterup/counterup.min.js"></script>
+    <script src="static/lib/owlcarousel/owl.carousel.min.js"></script>
+
+
+
+    <!-- Template Javascript -->
+    <script src="static/js/main.js"></script>
+<script src="static/js/second.js"></script>
+
+
+</body>
+
+</html>
