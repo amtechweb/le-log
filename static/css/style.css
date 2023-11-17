@@ -176,7 +176,7 @@ overflow: hidden;
 /* Header */
 @media (max-width: 768px) {
 #carousel-text p,#carousel-text2 p{
-font-size:16px !important;
+font-size:18px !important;
 font-weight:bold !important;
 }
 
@@ -252,6 +252,23 @@ font-size:15px !important;
 .breadcrumb-item + .breadcrumb-item::before {
     color: var(--light);
 }
+
+
+#carousel-text p, #carousel-text2 p{
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Serif', serif;
+
+}
+
+#carousel-text h4, #carousel-text2 h4 {
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Serif', serif;
+
+
+}
+
+
+
 
 /* About */
 @media (min-width: 992px) {

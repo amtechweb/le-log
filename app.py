@@ -57,6 +57,8 @@ def sloadr():
     return render_template("sloadr.html")
 
 
+
+
 @app.route('/contact', methods=['GET', 'POST'])
 def contact():
     if request.method == 'POST':
