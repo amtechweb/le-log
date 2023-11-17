@@ -1,3 +1,5 @@
+
+
 :root {
     --primary: #FF3E41;
     --secondary: #51CFED;
@@ -173,6 +175,20 @@ overflow: hidden;
 
 /* Header */
 @media (max-width: 768px) {
+#carousel-text p,#carousel-text2 p{
+font-size:16px !important;
+font-weight:bold !important;
+}
+
+p{
+font-size:15px !important;
+}
+
+li{
+font-size:15px !important;
+}
+
+
     .header-carousel .owl-carousel-item {
         position: relative;
         height: 450px;
@@ -396,7 +412,7 @@ object-fit: cover;
 
 /* Common styles for both desktop and mobile */
 .info-container .image-container {
-    margin-top: 50px;
+
     position: relative;
     width: 100%;
 }
@@ -450,6 +466,10 @@ object-fit: cover;
         color: white;
         display: block;
     }
+
+
+
+
 }
 
 @media (max-width: 768px) {
@@ -537,11 +557,6 @@ object-fit: cover;
 
 .footer .copyright a {
     color: var(--light);
-}
-
-.hr {
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
 
 

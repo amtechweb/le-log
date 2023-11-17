@@ -16,37 +16,45 @@ app.config['MAIL_USE_SSL'] = True
 # Initialize Flask-Mail
 mail = Mail(app)
 
+
 @app.route("/")
 def index():
     return render_template("index.html")
+
 
 @app.route("/service")
 def service():
     return render_template("service.html")
 
+
 @app.route("/containers")
 def containers():
     return render_template("containers.html")
+
+
 @app.route("/adr")
 def adr():
     return render_template("adr.html")
+
 
 @app.route("/slopage")
 def slopage():
     return render_template("slopage.html")
 
+
 @app.route("/sloservice")
 def sloservice():
     return render_template("sloservice.html")
 
+
 @app.route("/slocontainers")
 def slocontainers():
     return render_template("slocontainers.html")
+
+
 @app.route("/sloadr")
 def sloadr():
     return render_template("sloadr.html")
-
-
 
 
 @app.route('/contact', methods=['GET', 'POST'])
@@ -81,6 +89,6 @@ def contact():
 
     return render_template('/')
 
+
 if __name__ == '__main__':
     app.run(debug=True)
-
