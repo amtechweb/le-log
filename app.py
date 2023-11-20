@@ -77,7 +77,7 @@ def contact():
             # Send the email
             msg = Message('Nov obrazec - spletna stran',
                           sender=('LeLog-spletna stran', 'contact.form2307@gmail.com'),
-                          recipients=['amefis1991@gmail.com'])
+                          recipients=['info@le-log.si'])
             msg.body = f"Name: {name}\nEmail: {email}\nMobile: {mobile}\nDelivery Option: {delivery_option}\nSpecial Note: {special_note}"
             mail.send(msg)
 
