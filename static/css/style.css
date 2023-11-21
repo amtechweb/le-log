@@ -162,7 +162,7 @@
 
 
 .owl-carousel-item {
-height:700px;
+height:800px;
 overflow: hidden;
 
 
@@ -202,10 +202,16 @@ font-weight:bold !important;
     margin:10px!important;
   }
 
- #carousel-text2 .btn-primary,  #carousel-text .btn-primary {
+ #carousel-text2 .btn-primary {
     position: relative;
 
   }
+
+   #carousel-text .btn-primary {
+    position: relative;
+
+  }
+
 
 p{
 font-size:15px !important;
@@ -299,7 +305,7 @@ text-shadow: 2px 2px 4px black;
 
 }
 
-#carousel-text2 h4, #carousel-text  h4, #carousel-text3 h4{
+#carousel-text2 h4,  #carousel-text3 h4{
 font-family: 'Roboto', sans-serif;
 font-family: 'Roboto Serif', serif;
   /* Change the font family and size of the heading */
@@ -312,6 +318,16 @@ font-family: 'Roboto Serif', serif;
 
 }
 
+#carousel-text h4{
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Serif', serif;
+  /* Change the font family and size of the heading */
+  font-size: 30px;
+  /* Add some letter spacing and line height to the heading */
+  letter-spacing: 4px;
+  line-height: 1.2;
+  text-shadow: 1px 1px 4px white;
+}
 
 
 /* About */
