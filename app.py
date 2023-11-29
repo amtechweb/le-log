@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, flash, redirect
+from flask import Flask, render_template, request, flash, redirect, send_file
 from flask_mail import Mail, Message
 from email_validator import validate_email, EmailNotValidError
 
@@ -21,6 +21,10 @@ mail = Mail(app)
 def index():
     return render_template("index.html")
 
+@app.route("/LICENSE.txt")
+def get_license():
+    license_file_path = "LICENSE.txt"
+    return send_file(license_file_path, mimetype="application/octet-stream")
 
 @app.route("/service")
 def service():
