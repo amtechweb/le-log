@@ -171,7 +171,13 @@ overflow: hidden;
 height:1000px;
 
 }
+ #carousel-text3 .btn-primary {
+    position: relative;
+    top:10px !important;
+    left:200px !important;
+    top:-10px !important;
 
+  }
 
 }
 
