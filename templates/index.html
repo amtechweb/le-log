@@ -483,13 +483,96 @@ way, making sure that their cargo is in safe hands.</p>
 
 
     <!-- Footer End -->
+<div id="cookie-popup" class="cookie-popup">
+    <p>This website uses cookies to ensure you get the best experience on our website. <a href="#" onclick="showCookieDetails()">Read more</a></p>
+    <div class="cookie-options">
+        <button onclick="acceptCookies()">Accept</button>
+        <button onclick="declineCookies()">Decline</button>
+    </div>
+</div>
+<!-- End Cookie Popup -->
 
+<!-- Cookie Details Modal -->
+<div id="cookie-details-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeCookieDetailsModal()">&times;</span>
+        <h2>Cookie Policy</h2>
+        <p>This Cookie Policy explains how Le-log uses cookies and similar technologies to recognize you when you visit our website.</p>
+        <h3>What are cookies?</h3>
+        <p>Cookies are small pieces of text sent by your web browser by a website you visit. A cookie file is stored in your web browser and allows the website or a third-party to recognize you and make your next visit easier and more useful to you.</p>
+        <h3>How we use cookies?</h3>
+        <p>When you use and access our website, we may place a number of cookies files in your web browser. We use cookies for the following purposes:</p>
+        <ul>
+            <li>To enable certain functions of the website</li>
+            <li>To provide analytics</li>
+            <li>To store your preferences</li>
+        </ul>
+        <h3>What types of cookies do we use?</h3>
+        <p>There are several different types of cookies, however, our website uses:</p>
+        <ul>
+            <li>Essential cookies: These cookies are necessary for the website to function properly.</li>
+            <li>Analytical cookies: These cookies allow us to analyze how users use the website and improve the website's functionality.</li>
+            <li>Preference cookies: These cookies are used to store your preferences and settings.</li>
+        </ul>
+        <h3>How to manage cookies?</h3>
+        <p>You can control and/or delete cookies as you wish. You can delete all cookies that are already on your computer and you can set most browsers to prevent them from being placed. If you do this, however, you may have to manually adjust some preferences every time you visit a site and some services and functionalities may not work.</p>
+    </div>
+</div>
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"><i class="bi bi-arrow-up"></i></a>
 
 
+<script>
+    // Function to set cookie and close the popup
+    function acceptCookies() {
+        // Set cookie expiration date to 1 year from now
+        var expiryDate = new Date();
+        expiryDate.setFullYear(expiryDate.getFullYear() + 1);
+        // Set cookie value
+        document.cookie = "cookies_accepted=true; expires=" + expiryDate.toUTCString() + "; path=/";
+        // Hide the popup
+        document.getElementById("cookie-popup").style.display = "none";
+    }
 
+    // Function to decline cookies and close the popup
+    function declineCookies() {
+        // Set cookie value to decline
+        document.cookie = "cookies_accepted=false; path=/";
+        // Hide the popup
+        document.getElementById("cookie-popup").style.display = "none";
+    }
+
+    // Function to show cookie details modal
+    function showCookieDetails() {
+        document.getElementById("cookie-details-modal").style.display = "block";
+    }
+
+    // Function to close cookie details modal
+    function closeCookieDetailsModal() {
+        document.getElementById("cookie-details-modal").style.display = "none";
+    }
+
+    // Check if the cookies have been accepted
+    window.onload = function() {
+        var cookiesAccepted = getCookie("cookies_accepted");
+        if (!cookiesAccepted) {
+            document.getElementById("cookie-popup").style.display = "block";
+        }
+    };
+
+    // Function to get cookie value by name
+    function getCookie(name) {
+        var cookieArr = document.cookie.split("; ");
+        for (var i = 0; i < cookieArr.length; i++) {
+            var cookiePair = cookieArr[i].split("=");
+            if (name === cookiePair[0]) {
+                return cookiePair[1];
+            }
+        }
+        return null;
+    }
+</script>
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
