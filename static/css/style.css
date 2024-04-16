@@ -493,7 +493,7 @@ object-fit: cover;
     padding-left: 0;
     left: -100%;
     z-index: 1;
-    padding-top:1px;
+    padding-top:2px;
 }
 
 .service-item:hover a.btn-slide i,
